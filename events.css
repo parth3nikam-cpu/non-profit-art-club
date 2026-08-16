@@ -1,0 +1,68 @@
+.events-body { background: var(--paper); }
+.site-nav a.active::after { width: 100%; }
+.events-hero { min-height: 440px; display: grid; grid-template-columns: 1fr .8fr; align-items: center; gap: 5vw; padding: clamp(4rem,8vw,7rem) 5vw; overflow: hidden; background: var(--deep); color: var(--white); }
+.events-hero .eyebrow { color: var(--gold); }
+.events-hero h1 { margin-bottom: 1rem; font-size: clamp(3.6rem,7vw,6.7rem); }
+.events-hero h1 em { color: var(--gold); }
+.events-hero > div:first-child > p:last-child { max-width: 38rem; color: var(--soft); font-size: 1.1rem; line-height: 1.7; }
+.events-hero-art { min-height: 270px; position: relative; }
+.events-hero-art span { position: absolute; display: block; border-radius: 50%; }
+.events-hero-art span:nth-child(1) { width: 250px; aspect-ratio: 1; right: 11%; top: 4%; background: var(--gold); }
+.events-hero-art span:nth-child(2) { width: 190px; height: 260px; right: 38%; top: 6%; background: var(--clay); border-radius: 50% 18% 50% 40%; transform: rotate(-18deg); }
+.events-hero-art span:nth-child(3) { width: 160px; height: 220px; right: 8%; top: 25%; background: var(--teal); border-radius: 25% 55% 30% 55%; transform: rotate(24deg); }
+
+.events-content { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(300px,.65fr); align-items: start; gap: clamp(1.5rem,4vw,3.5rem); padding: clamp(4rem,8vw,7rem) 5vw; }
+.calendar-card { padding: clamp(1.25rem,3vw,2.2rem); background: var(--white); border: 1px solid rgba(22,94,112,.12); border-radius: var(--radius); box-shadow: 0 20px 55px rgba(18,54,62,.1); }
+.calendar-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; }
+.calendar-kicker { margin: 0 0 .4rem; color: var(--teal); font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.calendar-toolbar h2 { margin: 0; font-size: clamp(2rem,4vw,3.2rem); }
+.calendar-actions { display: flex; align-items: center; gap: .55rem; }
+.calendar-actions button { min-height: 42px; border: 1px solid rgba(22,94,112,.22); background: var(--paper); color: var(--deep); font: inherit; font-weight: 700; cursor: pointer; transition: transform .2s,background .2s,color .2s; }
+.calendar-actions button:hover { transform: translateY(-2px); background: var(--deep); color: var(--white); }
+.today-button { padding: 0 1rem; border-radius: 999px; }
+.month-button { width: 42px; border-radius: 50%; font-size: 1.05rem; }
+.weekdays, .calendar-days { display: grid; grid-template-columns: repeat(7,1fr); gap: .45rem; }
+.weekdays { margin-bottom: .6rem; }
+.weekdays span { padding: .45rem 0; color: var(--teal); font-size: .72rem; font-weight: 700; text-align: center; text-transform: uppercase; }
+.calendar-day { position: relative; aspect-ratio: 1; display: grid; place-items: center; border: 0; border-radius: .85rem; background: transparent; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; transition: transform .16s,background .16s,color .16s; }
+.calendar-day:hover, .calendar-day:focus-visible { background: var(--soft); transform: translateY(-2px); outline: none; }
+.calendar-day.outside-month { color: #9aa5a7; font-weight: 400; }
+.calendar-day.today::after { content: ""; width: 5px; height: 5px; position: absolute; left: 50%; bottom: 13%; border-radius: 50%; background: var(--gold); transform: translateX(-50%); }
+.calendar-day.selected { background: var(--deep); color: var(--white); box-shadow: 0 8px 18px rgba(22,94,112,.24); }
+.calendar-day.selected::after { background: var(--gold); }
+.selected-date { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.5rem; padding: 1.25rem; background: var(--paper); border-radius: 1rem; }
+.selected-date-mark { width: 13px; height: 13px; flex: 0 0 auto; margin-top: .35rem; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 6px rgba(221,168,50,.18); }
+.selected-date small { display: block; margin-bottom: .25rem; color: var(--teal); font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.selected-date strong { display: block; font-family: "Fraunces",serif; font-size: 1.15rem; }
+.selected-date p { margin: .35rem 0 0; color: #5c7075; font-size: .9rem; }
+
+.upcoming-card { position: sticky; top: 110px; padding: clamp(1.5rem,3vw,2.5rem); background: var(--clay); border-radius: var(--radius); box-shadow: 16px 16px 0 var(--gold); }
+.upcoming-card h2 { margin-bottom: 2rem; font-size: clamp(2.5rem,4vw,4rem); }
+.empty-events { padding: 1.6rem; background: rgba(255,253,248,.72); border: 1px solid rgba(22,94,112,.12); border-radius: 1.2rem; }
+.empty-events-art { width: 84px; height: 84px; position: relative; margin-bottom: 1.5rem; }
+.empty-events-art i { position: absolute; display: block; border-radius: 50%; }
+.empty-events-art i:nth-child(1) { width: 64px; height: 64px; left: 0; bottom: 0; background: var(--deep); }
+.empty-events-art i:nth-child(2) { width: 45px; height: 45px; right: 0; top: 0; background: var(--gold); }
+.empty-events-art i:nth-child(3) { width: 28px; height: 58px; right: 10px; bottom: 0; background: var(--teal); border-radius: 50% 25%; transform: rotate(25deg); }
+.empty-events h3 { margin-bottom: .7rem; font-size: 1.55rem; }
+.empty-events p { margin: 0; line-height: 1.6; }
+.suggest-button { margin-top: 1.5rem; background: var(--deep); color: var(--white); }
+.suggest-button:hover { background: var(--teal); }
+
+@media (max-width: 900px) {
+  .events-hero { grid-template-columns: 1fr; }
+  .events-hero-art { display: none; }
+  .events-content { grid-template-columns: 1fr; }
+  .upcoming-card { position: static; box-shadow: 10px 10px 0 var(--gold); }
+}
+
+@media (max-width: 640px) {
+  .events-hero { min-height: 380px; padding: 4rem 5vw; }
+  .calendar-toolbar { align-items: flex-start; flex-direction: column; }
+  .calendar-actions { width: 100%; }
+  .today-button { margin-right: auto; }
+  .weekdays, .calendar-days { gap: .2rem; }
+  .weekdays span { font-size: .62rem; }
+  .calendar-day { border-radius: .6rem; font-size: .86rem; }
+  .calendar-day.today::after { bottom: 8%; }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore upcoming Open Canvas Art Club workshops and community events." />
+    <title>Events | Open Canvas Art Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="events.css" />
+    <script src="events.js" defer></script>
+  </head>
+  <body class="events-body">
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Open Canvas home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Open Canvas</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#get-involved">Get involved</a>
+        <a class="active" href="events.html" aria-current="page">Events</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="events-hero">
+        <div>
+          <p class="eyebrow">Create something together</p>
+          <h1>Events &amp;<br /><em>workshops</em></h1>
+          <p>Explore the calendar, choose a date, and check back for new creative gatherings.</p>
+        </div>
+        <div class="events-hero-art" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section class="events-content" aria-labelledby="calendar-heading">
+        <div class="calendar-card">
+          <div class="calendar-toolbar">
+            <div>
+              <p class="calendar-kicker">Event calendar</p>
+              <h2 id="calendar-heading"><span id="month-label"></span></h2>
+            </div>
+            <div class="calendar-actions">
+              <button id="today-button" class="today-button" type="button">Today</button>
+              <button id="previous-month" class="month-button" type="button" aria-label="Previous month">←</button>
+              <button id="next-month" class="month-button" type="button" aria-label="Next month">→</button>
+            </div>
+          </div>
+
+          <div class="weekdays" aria-hidden="true">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div id="calendar-days" class="calendar-days" role="grid" aria-label="Calendar dates"></div>
+
+          <div class="selected-date" aria-live="polite">
+            <span class="selected-date-mark" aria-hidden="true"></span>
+            <div>
+              <small>Selected date</small>
+              <strong id="selected-date-label"></strong>
+              <p id="selected-date-status">No events on this date yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="upcoming-card" aria-labelledby="upcoming-heading">
+          <p class="eyebrow">What’s ahead</p>
+          <h2 id="upcoming-heading">Upcoming Events</h2>
+          <div class="empty-events">
+            <div class="empty-events-art" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>No upcoming events yet.</h3>
+            <p>New workshops and community gatherings will appear here as soon as they’re announced.</p>
+          </div>
+          <a class="button suggest-button" href="index.html#contact">Suggest an event <span aria-hidden="true">→</span></a>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand brand-footer" href="index.html#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Open Canvas</span></a>
+      <p>Creativity for everyone.</p>
+      <p>© <span id="year"></span> Open Canvas Art Club</p>
+    </footer>
+  </body>
+</html>
