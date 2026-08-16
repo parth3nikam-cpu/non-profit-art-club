@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A welcoming nonprofit art club helping everyone freely express their creativity." />
+    <title>Open Canvas Art Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Open Canvas home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Open Canvas</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#get-involved">Get involved</a>
+        <a href="#events">Events</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A nonprofit art club for everyone</p>
+          <h1>Make space<br />for <em>creativity.</em></h1>
+          <p class="hero-intro">Supplies, support, and a welcoming place to create—no experience necessary.</p>
+          <a class="button button-primary" href="#get-involved">Find your way in <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-label="Colorful abstract artwork made from layered paper shapes" role="img">
+          <div class="sun"></div>
+          <div class="paper paper-one"></div>
+          <div class="paper paper-two"></div>
+          <div class="paper paper-three"></div>
+          <span class="scribble">create freely</span>
+        </div>
+      </section>
+
+      <section id="about" class="mission section-pad">
+        <div class="studio-photo" role="img" aria-label="An inviting art table with colorful materials">
+          <div class="paint paint-one"></div>
+          <div class="paint paint-two"></div>
+          <div class="paint paint-three"></div>
+          <div class="brush brush-one"></div>
+          <div class="brush brush-two"></div>
+          <span>Room to imagine</span>
+        </div>
+        <div class="mission-copy">
+          <p class="eyebrow">Why we’re here</p>
+          <h2>Art belongs to all of us.</h2>
+          <p>For some people art is just something that exists in their day to day life, but for others, it is how they process emotions and express their feelings. Although not everyone has this opportunity. They may have grown up in an environment where they didn’t have the supplies or the money to create. We believe that everyone deserves a chance to freely express creativity.</p>
+        </div>
+      </section>
+
+      <section id="get-involved" class="involved section-pad">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Join the club</p>
+            <h2>Get involved</h2>
+          </div>
+          <p>There’s more than one way to help creativity grow in our community.</p>
+        </div>
+        <div class="involvement-grid">
+          <article class="involvement-card workshops">
+            <span class="card-number">01</span>
+            <div class="card-icon" aria-hidden="true">✦</div>
+            <h3>Workshops</h3>
+            <p>Make something new in a friendly, judgment-free space with shared supplies.</p>
+            <a href="#events">See upcoming sessions <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="involvement-card volunteering">
+            <span class="card-number">02</span>
+            <div class="card-icon" aria-hidden="true">✎</div>
+            <h3>Volunteering</h3>
+            <p>Share your time, creative skills, or helping hands with artists of every age.</p>
+            <a href="mailto:hello@example.org">Become a volunteer <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="involvement-card donations">
+            <span class="card-number">03</span>
+            <div class="card-icon" aria-hidden="true">♥</div>
+            <h3>Donations</h3>
+            <p>Help us keep supplies free and creative opportunities open to everyone.</p>
+            <a href="mailto:hello@example.org">Support our mission <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="events" class="art-stories section-pad">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The power of making</p>
+            <h2>Art changes things</h2>
+          </div>
+          <p>Small creative moments can make a meaningful difference.</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="mini-art mini-art-one" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="story-copy"><span>01 / Expression</span><h3>Art gives feelings somewhere to go.</h3><p>Creative practice can offer a personal language when words feel out of reach.</p></div>
+          </article>
+          <article class="story-card">
+            <div class="mini-art mini-art-two" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="story-copy"><span>02 / Belonging</span><h3>Making together builds community.</h3><p>A shared table can turn strangers into collaborators, mentors, and friends.</p></div>
+          </article>
+          <article class="story-card">
+            <div class="mini-art mini-art-three" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="story-copy"><span>03 / Access</span><h3>Supplies should open doors, not close them.</h3><p>Free materials help more people explore, experiment, and find their voice.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="follow section-pad">
+        <p class="eyebrow">Stay inspired</p>
+        <h2>Follow us</h2>
+        <p>See what our community is making and find the next chance to join in.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Open Canvas on Instagram"><span aria-hidden="true">◎</span>Instagram</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="Open Canvas on YouTube"><span aria-hidden="true">▶</span>YouTube</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Open Canvas on Facebook"><span aria-hidden="true">f</span>Facebook</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand brand-footer" href="#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Open Canvas</span></a>
+      <p>Creativity for everyone.</p>
+      <p>© <span id="year"></span> Open Canvas Art Club</p>
+    </footer>
+  </body>
+</html>
