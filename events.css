@@ -46,8 +46,10 @@
 .empty-events-art i:nth-child(3) { width: 28px; height: 58px; right: 10px; bottom: 0; background: var(--teal); border-radius: 50% 25%; transform: rotate(25deg); }
 .empty-events h3 { margin-bottom: .7rem; font-size: 1.55rem; }
 .empty-events p { margin: 0; line-height: 1.6; }
-.suggest-button { margin-top: 1.5rem; background: var(--deep); color: var(--white); }
-.suggest-button:hover { background: var(--teal); }
+.event-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.questions-button { background: var(--deep); color: var(--white); }
+.questions-button:hover { background: var(--teal); }
+.suggest-link { color: var(--ink); font-size: .9rem; font-weight: 700; text-underline-offset: 4px; }
 
 @media (max-width: 900px) {
   .events-hero { grid-template-columns: 1fr; }
