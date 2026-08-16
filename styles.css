@@ -82,7 +82,7 @@ h3 { font-size: 1.75rem; letter-spacing: -.025em; }
 .art-stories { background: var(--soft); }
 .story-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
 .story-card { display: flex; flex-direction: column; background: var(--paper); border-radius: var(--radius); overflow: hidden; }
-.fact-photo { height: 280px; flex: 0 0 auto; background-image: url("assets/art-facts-triptych.png"); background-repeat: no-repeat; background-size: 300% auto; }
+.fact-photo { height: 280px; flex: 0 0 auto; background-image: url("art-facts-triptych.png"); background-repeat: no-repeat; background-size: 300% auto; }
 .fact-photo-one { background-position: left center; }
 .fact-photo-two { background-position: center center; }
 .fact-photo-three { background-position: right center; }
