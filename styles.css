@@ -102,9 +102,13 @@ h3 { font-size: 1.75rem; letter-spacing: -.025em; }
 .follow { text-align: center; background: var(--paper); }
 .follow > p:not(.eyebrow) { max-width: 38rem; margin: 0 auto 2.5rem; font-size: 1.1rem; line-height: 1.6; }
 .social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
-.social-links a { display: inline-flex; align-items: center; gap: .7rem; padding: .8rem 1.15rem; border: 1px solid var(--deep); border-radius: 999px; text-decoration: none; font-weight: 700; transition: background .2s,color .2s; }
+.social-links a { min-width: 145px; min-height: 135px; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; gap: .8rem; padding: 1.25rem; background: var(--white); border: 1px solid rgba(22,94,112,.22); border-radius: 1.25rem; text-decoration: none; font-weight: 700; box-shadow: 0 8px 24px rgba(18,54,62,.08); transition: transform .2s, background .2s, color .2s; }
 .social-links a:hover { background: var(--deep); color: var(--white); }
-.social-links i { font-size: 1.2rem; width: 1.3rem; text-align: center; }
+.social-links a:hover { transform: translateY(-5px); }
+.social-links i { font-size: 3.25rem; width: auto; text-align: center; }
+.social-links a:nth-child(1) i { background: linear-gradient(135deg, #833ab4, #fd1d1d 55%, #fcb045); background-clip: text; -webkit-background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+.social-links a:nth-child(2) i { color: #ff0000; }
+.social-links a:nth-child(3) i { color: #1877f2; }
 footer { background: var(--deep); color: var(--white); padding: 2rem 5vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; font-size: .85rem; }
 .brand-footer .brand-mark { transform: scale(.8) rotate(-7deg); }
 
