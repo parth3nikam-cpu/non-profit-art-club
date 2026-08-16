@@ -132,19 +132,40 @@
       </section>
 
       <section id="contact" class="contact section-pad">
-        <div class="contact-heading">
+        <div class="contact-intro">
           <p class="eyebrow">We’d love to hear from you</p>
           <h2>Contact Us</h2>
-          <p>Have a question or want to get involved? Send us a message using the form below.</p>
+          <p>Have a question, an idea, or want to get involved? Tell us a little about yourself and we’ll help you find your place in our creative community.</p>
+          <div class="contact-note">
+            <strong>What happens next?</strong>
+            <span>Our team will review your message and reach out with information about workshops, volunteering, or other ways to join in.</span>
+          </div>
         </div>
-        <div class="form-frame">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdrF9GERncHdpXyDJ-AYcZgtMpeLrRrkR3J4lhMN-_KDtakPw/viewform?embedded=true&amp;usp=pp_url&amp;entry.126051849=Myra&amp;entry.457859474=myra@gmail.com&amp;entry.1065668010=1234567890&amp;entry.1295080886=Art"
-            title="Open Canvas contact form"
-            loading="lazy"
-          >Loading contact form…</iframe>
-        </div>
-        <a class="form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdrF9GERncHdpXyDJ-AYcZgtMpeLrRrkR3J4lhMN-_KDtakPw/viewform?usp=pp_url&amp;entry.126051849=Myra&amp;entry.457859474=myra@gmail.com&amp;entry.1065668010=1234567890&amp;entry.1295080886=Art" target="_blank" rel="noreferrer">Open the contact form in a new tab <span aria-hidden="true">↗</span></a>
+
+        <form class="contact-form" id="art-contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-phone">Phone</label>
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone number" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-interest">What are you interested in?</label>
+              <input id="contact-interest" name="interest" type="text" placeholder="Art, workshops, volunteering…" required />
+            </div>
+          </div>
+          <button class="button form-submit" type="submit">Send Message <span aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
