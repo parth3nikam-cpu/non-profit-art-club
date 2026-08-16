@@ -31,7 +31,8 @@ a { color: inherit; }
 .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; color: var(--deep); margin: 0 0 1rem; }
 h1,h2,h3 { font-family: "Fraunces", serif; margin-top: 0; line-height: 1.02; }
 h1 { font-size: clamp(3.4rem,7vw,7.2rem); letter-spacing: -.055em; margin-bottom: 1.5rem; }
-h1 em { color: var(--clay); font-weight: inherit; }
+h1 em { color: var(--clay); font-family: "Caveat", cursive; font-weight: 600; }
+h1 strong { font-weight: 900; }
 h2 { font-size: clamp(2.5rem,5vw,4.6rem); letter-spacing: -.04em; margin-bottom: 1.25rem; }
 h3 { font-size: 1.75rem; letter-spacing: -.025em; }
 .hero-intro { font-size: clamp(1rem,1.5vw,1.2rem); max-width: 33rem; line-height: 1.65; margin-bottom: 2rem; }
