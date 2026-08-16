@@ -35,7 +35,7 @@ h1 em { color: var(--clay); font-family: "Caveat", cursive; font-weight: 600; }
 h1 strong { font-weight: 900; }
 h2 { font-size: clamp(2.5rem,5vw,4.6rem); letter-spacing: -.04em; margin-bottom: 1.25rem; }
 h3 { font-size: 1.75rem; letter-spacing: -.025em; }
-.hero-intro { font-size: clamp(1rem,1.5vw,1.2rem); max-width: 33rem; line-height: 1.65; margin-bottom: 2rem; }
+.hero-intro { font-family: "Fraunces", serif; font-size: clamp(1.25rem,2vw,1.65rem); font-style: italic; font-weight: 600; max-width: 33rem; line-height: 1.45; margin-bottom: 2rem; }
 .button { display: inline-flex; align-items: center; gap: 1rem; padding: .95rem 1.3rem; border-radius: 999px; text-decoration: none; font-weight: 700; }
 .button-primary { background: var(--deep); color: var(--white); }
 .button-primary:hover { background: var(--teal); }
@@ -104,7 +104,7 @@ h3 { font-size: 1.75rem; letter-spacing: -.025em; }
 .social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
 .social-links a { display: inline-flex; align-items: center; gap: .7rem; padding: .8rem 1.15rem; border: 1px solid var(--deep); border-radius: 999px; text-decoration: none; font-weight: 700; transition: background .2s,color .2s; }
 .social-links a:hover { background: var(--deep); color: var(--white); }
-.social-links span { font-size: 1.2rem; width: 1.3rem; }
+.social-links i { font-size: 1.2rem; width: 1.3rem; text-align: center; }
 footer { background: var(--deep); color: var(--white); padding: 2rem 5vw; display: flex; align-items: center; justify-content: space-between; gap: 2rem; font-size: .85rem; }
 .brand-footer .brand-mark { transform: scale(.8) rotate(-7deg); }
 
